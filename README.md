@@ -5,7 +5,7 @@
 
 **Full monitoring stack here:** [https://github.com/P-OPSTeam/celestia-tools/tree/main/grafana](https://github.com/P-OPSTeam/celestia-tools/tree/main/grafana)
 ## Configuration
-The exporter is pre-configured to transmit telemetry data to the Celestia server. Refer to the configuration in `conf/otel-collector-config.yaml`:
+The exporter is pre-configured to transmit telemetry data to the Celestia server. This is already configured for mainnet. Refer to the configuration in `conf/otel-collector-config.yaml`:
 
 ```yaml
 exporters:
@@ -14,14 +14,15 @@ exporters:
 ```
 
 ## Usage
-To enable metrics collection, initialize your Celestia bridge with the following parameters:
-```sh
---metrics --metrics.tls=false --metrics.endpoint=127.0.0.1:4318
-```
 Start the service with the command:
 ```sh
 docker-compose up -d
 ```
+To enable metrics collection, start your Celestia bridge with the following parameters:
+```sh
+--metrics --metrics.tls=false --metrics.endpoint=127.0.0.1:4318
+```
+
 ### Access metrics at the following endpoints:
 - **Exporter metrics**: Accessible at http://127.0.0.1:8888/metrics
 - **Bridge metrics**: Accessible at http://127.0.0.1:8889/metrics
