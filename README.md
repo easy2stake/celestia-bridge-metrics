@@ -3,6 +3,7 @@
 ## Overview
 `celestia-bridge-metrics` is a Prometheus exporter designed for simplicity and ease of use, catering specifically to Celestia bridge instances.
 
+**Full monitoring stack here:** [https://github.com/P-OPSTeam/celestia-tools/tree/main/grafana](https://github.com/P-OPSTeam/celestia-tools/tree/main/grafana)
 ## Configuration
 The exporter is pre-configured to transmit telemetry data to the Celestia server. Refer to the configuration in `conf/otel-collector-config.yaml`:
 
