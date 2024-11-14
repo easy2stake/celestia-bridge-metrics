@@ -13,12 +13,13 @@ exporters:
   otlphttp:
     endpoint: https://otel.celestia.observer
 # Full config file example: otel-collector-config.yaml.mainnet
+
 ---------------------------------------------------------------	
+
 # For mocha-4 update the endpoint with the following:
 exporters:
   otlphttp:
     endpoint: https://otel.celestia-mocha.com
-
 # Full config file example: otel-collector-config.yaml.mocha-4-testnet
 ```
 
