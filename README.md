@@ -8,9 +8,18 @@
 The exporter is pre-configured to transmit telemetry data to the Celestia server. This is already configured for mainnet. Refer to the configuration in `conf/otel-collector-config.yaml`:
 
 ```yaml
+# Celestia Mainnet configuration
 exporters:
   otlphttp:
     endpoint: https://otel.celestia.observer
+# Full config file example: otel-collector-config.yaml.mainnet
+---------------------------------------------------------------	
+# For mocha-4 update the endpoint with the following:
+exporters:
+  otlphttp:
+    endpoint: https://otel.celestia-mocha.com
+	
+# Full config file example: otel-collector-config.yaml.mocha-4-testnet
 ```
 
 ## Usage
