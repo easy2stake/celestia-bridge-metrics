@@ -18,7 +18,7 @@ exporters:
 exporters:
   otlphttp:
     endpoint: https://otel.celestia-mocha.com
-	
+
 # Full config file example: otel-collector-config.yaml.mocha-4-testnet
 ```
 
